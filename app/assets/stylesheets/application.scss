@@ -68,7 +68,7 @@ body {
   background-color: #fff;
   border-color: #edeeee;
   border-style: solid;
-  border-radius: 3px;
+  border-radius: 10px;
   border-width: 1px;
   margin-bottom: 60px;
   .post-head {
@@ -91,6 +91,13 @@ body {
       float: right;
     }
   }
+
+  a {
+    color: #595959;
+    text-decoration: none;
+}
+
+
   .image {
     border-bottom: 1px solid #eeefef;
     border-top: 1px solid #eeefef;
@@ -169,9 +176,9 @@ body {
 }
 
 .login-bg {
-  padding-top: 4em;
+  padding-top: 9.5em;
   height: 100%;
-  background-image: image-url('loginbg.jpg');
+  background-image: image-url('login.jpg');
   -moz-background-size: cover;
   -webkit-background-size: cover;
   -o-background-size: cover;
@@ -185,6 +192,30 @@ body {
   border: none;
 }
 
+input#user_email {
+    border-radius: 15px;
+    background-color: #e6e6e6;
+    border-color: #e6e6e6;
+}
+input#user_password {
+    border-radius: 15px;
+    background-color: #e6e6e6;
+    border-color: #e6e6e6;
+}
+
+
+
+input.btn.btn-default.btn-lg.btn-info.btn-block {
+    border-radius: 20px;
+    background-color: #b3b3b3;
+    border-color: #b3b3b3;
+
+}
+
+.log-in.panel {
+    border-radius: 25px;
+}
+
 .panel {
   border-radius: 8px;
 }
@@ -192,6 +223,7 @@ body {
 .panel-heading{
   h1 {
     text-align: center;
+    padding: 20px 15px;
   }
 }
 
