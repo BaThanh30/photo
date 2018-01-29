@@ -6,8 +6,8 @@ module PostsHelper
   end
 
   def liked_post(post)
-    return 'glyphicon-heart' if current_user.voted_for? post
-    'glyphicon-heart-empty'
+    return 'glyphicon-ok-sign' if current_user.voted_for? post
+    'glyphicon-ok-circle'
   end
 
   private

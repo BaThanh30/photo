@@ -18,6 +18,10 @@ gem 'acts_as_votable'
 gem 'kaminari'
 gem 'jquery-turbolinks'
 
+gem "omniauth"
+gem "omniauth-google-oauth2"
+gem "omniauth-facebook"
+
 group :development, :test do
   gem 'byebug'
   gem 'web-console'

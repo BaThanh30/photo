@@ -10,8 +10,12 @@
     .collapse.navbar-collapse#bs-navbar-collapse-1
       %ul.nav.navbar-nav.navbar-right
         - if user_signed_in?
+
           %li
             = render 'notifications/notification_dropdown'
+          
+          %li
+            =link_to current_user.user_name, profile_path(current_user.user_name)
           %li
             = link_to "New Post", new_post_path
           %li
@@ -19,5 +23,7 @@
         - else
           %li
             = link_to "Login", new_user_session_path
-          %li
+          %%li
             = link_to "Register", new_user_registration_path
+
+  
