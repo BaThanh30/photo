@@ -51,7 +51,7 @@ body {
 }
 
 .navbar-container {
-  max-width: 640px;
+  max-width: 700px;
   margin: 0 auto;
 }
 
@@ -68,8 +68,8 @@ body {
   background-color: #fff;
   border-color: #edeeee;
   border-style: solid;
-  border-radius: 10px;
-  border-width: 1px;
+  border-radius: 15px;
+  border-width: 2px;
   margin-bottom: 60px;
   .post-head {
     flex-direction: row;
@@ -102,6 +102,10 @@ body {
     border-bottom: 1px solid #eeefef;
     border-top: 1px solid #eeefef;
   }
+}
+#image-preview {
+    margin: 0 auto;
+    padding-top: 20px;
 }
 
 .post-bottom {
