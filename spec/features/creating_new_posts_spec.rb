@@ -8,11 +8,11 @@ feature 'Creating posts' do
   scenario 'can create a new post' do
     visit '/'
     click_link 'New Post'
-    attach_file('post_image', "spec/files/images/coffee.jpg")
+    attach_file('post_image', "spec/files/images/12.jpg")
     fill_in 'post_caption', with: "nom nom nom #coffeetime"
     click_button 'Create Post'
     expect(page).to have_content("#coffeetime")
-    expect(page).to have_css("img[src*='coffee']")
+    expect(page).to have_css("img[src*='12']")
     expect(page).to have_content('Arnie')
   end
   scenario 'a post needs an image to save' do
